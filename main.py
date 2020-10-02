@@ -36,7 +36,7 @@ def download_choosen_format(bot, update):
         for f in files:
             bot.send_document(chat_id=query.message.chat_id, document=open(f, 'rb'))
 
-token=os.Getevl('token')
+token = '900878316:AAFXZSlOqVZVgu0ObustrkqRnkXb0nqA4bY'
 updater = Updater(token)
 
 updater.dispatcher.add_handler(MessageHandler(Filters.text, get_format))
