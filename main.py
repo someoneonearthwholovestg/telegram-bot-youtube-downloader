@@ -25,7 +25,7 @@ def download_choosen_format(bot, update):
     query = update.callback_query
     resolution_code, link = query.data.split(' ', 1)
     
-    bot.edit_message_text(text="Downloading...",
+    bot.edit_message_text(text="Downloading🤞...",
                           chat_id=query.message.chat_id,
                           message_id=query.message.message_id)
     
